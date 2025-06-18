@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8dc; /* Soft yellow background like a toy */
+  color: #333;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 4px solid #4a90e2; /* Blue toy-like border */
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* ===== Heading Style ===== */
+h1 {
+  color: #4a90e2;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* ===== Button and Display Section ===== */
+.story-part {
+  margin: 15px 0;
+}
+
+/* All buttons used to cycle words and show story */
+button {
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #357abd;
+}
+
+/* Selected phrase display beside buttons */
+.selected-text {
+  font-weight: bold;
+  color: #222;
+  margin-left: 10px;
+  display: inline-block;
+  min-width: 180px;
+  text-align: left;
+}
+
+/* ===== Story Output Area ===== */
+#storyOutput {
+  margin-top: 30px;
+  padding: 15px;
+  border: 2px dashed #4a90e2;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 50px;
+}
