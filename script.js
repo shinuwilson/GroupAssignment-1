@@ -51,4 +51,10 @@ function cyclePart(index) {
   selectedSpans[index].textContent = parts[index][currentIndexes[index]];
 }
 
+// ===== Add Click Events to All Buttons =====
+buttons.forEach((button, i) => {
+  button.addEventListener('click', () => {
+    cyclePart(i);
+  });
+});
 
