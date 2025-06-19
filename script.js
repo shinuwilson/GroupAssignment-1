@@ -42,3 +42,13 @@ function initializeSelections() {
     selectedSpans[i].textContent = parts[i][0];
   }
 }
+
+// ===== Cycle Through Words =====
+function cyclePart(index) {
+  // Advance to the next option, looping back if needed
+  currentIndexes[index] = (currentIndexes[index] + 1) % parts[index].length;
+  // Update the display beside the button
+  selectedSpans[index].textContent = parts[index][currentIndexes[index]];
+}
+
+
