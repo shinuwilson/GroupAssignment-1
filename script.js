@@ -66,3 +66,10 @@ document.getElementById('showStoryBtn').addEventListener('click', () => {
   for (let i = 0; i < parts.length; i++) {
     story += parts[i][currentIndexes[i]] + ' ';
   }
+
+    // Output the full story
+  document.getElementById('storyOutput').textContent = story.trim();
+});
+
+// ===== Run Initialization on Page Load =====
+initializeSelections();
