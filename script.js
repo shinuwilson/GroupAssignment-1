@@ -58,3 +58,11 @@ buttons.forEach((button, i) => {
   });
 });
 
+// ===== Final Story Output =====
+document.getElementById('showStoryBtn').addEventListener('click', () => {
+  let story = '';
+
+  // Build story using current index selections
+  for (let i = 0; i < parts.length; i++) {
+    story += parts[i][currentIndexes[i]] + ' ';
+  }
